@@ -9,21 +9,21 @@
     <title>Todo App</title>
     </head>
 <body>
-<div class="aaa">
+<div class="todo-app">
     <img src="./eisenhower-matrix.jpg" alt="eisenhower-matrix photo">
-    <a class="more_inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+    <a class="todo-app__more-info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
 </div>
-<div class="centered-main-page-element">
-    <form id="topSectionForAddingElementToList">
-        <label for="new-task">Add Item</label>
-        <div class="task-row-wrapper">
-            <input id="new-task"class="task" type="text">
+<div class="todo-app__content">
+    <form id="todo-app__form">
+        <label class="todo-app__new-task" for="task">Add Item</label>
+        <div class="">
+            <input id="task"class="todo-app__new-task" type="text">
             <button>Add</button>
         </div>
 </form>
 <h3>Todo</h3>
-<nav>
-    <ul id="incompleteTasks">
+<nav class="todo-app__navigation">
+    <ul id="todo-app__navigation-list">
     <li>
         <input type="checkbox">
         <label class="task">Pay Bills</label>
@@ -31,7 +31,7 @@
         <button class="edit">Edit</button>
         <button class="delete"><img src="./remove.svg"></button>
     </li>
-    <li class="editMode">
+    <li class="todo-app__item">
         <input type="checkbox">
         <label class="task">Go Shopping</label>
         <input type="text" value="Go Shopping" class="task">
@@ -40,7 +40,7 @@
     </li>
     </ul>
     <h3>Completed</h3>
-    <ul id="completed-tasks">
+    <ul id="todo-app__navigation-list2">
         <li>
             <input type="checkbox" checked>
             <label class="task">See the Doctor</label>
